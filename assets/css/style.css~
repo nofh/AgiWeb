@@ -1,0 +1,358 @@
+/* ================================================ 
+   == General
+   == Menu
+   == Header
+   == Index
+   == Services
+   == Contact
+   == Agence
+   == Perso
+   ================================================ */
+
+/* ================================================ 
+   == General
+   ================================================ */
+/* body */
+body 
+{
+	background-image:url(../images/bg3.png);
+	padding-top:70px;
+	margin:0;
+}
+
+/* Liens */
+a 
+{
+	color:#44997C;
+	font-weight:900;
+}
+
+/* titre */
+h1,h2,h3,h4,h5,h6 
+{
+	font-family:league-gothic,serif;
+	text-transform:uppercase;
+	font-weight:100;
+}
+
+h1 a 
+{
+	color:#44997C;
+	text-decoration:none;
+	font-weight:100;
+}
+
+
+h1 a:hover 
+{
+	color:#444;
+}
+
+h2 
+{
+	font-size:2em;
+}
+
+/* paragraphes */
+p
+{
+ font-size: 1.3em;
+ font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+ color: black;
+}
+
+blockquote 
+{
+	font-family:arvo,serif;
+    font-size: 2.7em;
+	border:none;
+	text-align:center;
+}
+
+mark
+{
+    background: none;
+}
+
+
+/* ================================================ 
+   == Menu
+   ================================================ */
+
+
+
+.contain-to-grid
+{
+	background-image:url(../images/navy_blue.png);
+	background-color: black;
+}
+
+.top-bar /* idem que contain-to-grid  */ 
+{
+	background-image:url(../images/navy_blue.png);
+	background-color: black;
+    height: 80px;
+}
+
+
+/* nom du menu */
+.name h1 a 
+{
+    margin-top: 15px;
+    font-size:1.6em;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.name h1 a:hover
+{
+    color: #44997C !important;
+}
+
+/* menu logo, index */
+.title-area .active
+{
+    background-color: #333333;
+    border-radius: 20px;
+}
+
+.title-area .active h1 a
+{
+    color: #44997C;
+}
+
+/*  titres menu */
+.top-bar-section li:not(.has-form) a:not(.button)/* ecrase un css de zurb, fond li noir */
+{
+	background-image:url(../images/navy_blue.png);
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) /* Active */
+{
+    background-color: #333333;
+    color: #44997C;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover
+{
+    background-color: #333333;
+    color: #44997C;
+}
+
+.top-bar-section ul li a
+{
+    margin-top: 15px;
+    font-size:1.3em;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.top-bar-section ul li a:hover
+{
+    color: #44997C !important;
+}
+
+/* TODO $topbar-link-hover-lightness: -10%; // Darken by 10%
+a viere */
+/* ================================================ 
+   == Header
+   ================================================ */
+header 
+{
+	background-image:url(../images/header.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	min-width:100%;
+	display:block;
+	overflow:hidden;
+	margin-bottom: 40px;
+}
+
+#slogan
+{
+    margin: 40px 0px 45px 0;
+}
+
+.ouvertureQuote
+{
+    margin-top: -40px;
+    margin-right: 10px;
+    width: 32px;
+    height: 40px;
+}
+
+.fermetureQuote
+{
+    margin-bottom: -20px;
+    margin-left: 10px;
+    width: 32px;
+    height: 40px;
+}
+/* ================================================ 
+   == Index
+   ================================================ */
+.service_index h2 /* sous titres */
+{
+    height: 100px;
+    color : #44997C;
+}
+
+.service_index h2:hover
+{
+    font-style:italic;
+}
+
+.service_index a p img /* icon services web, gestion, hebergement */
+{
+	width:50%;
+	margin-left:20%;
+}
+
+.service_index:hover img
+{
+	width:60%;
+}
+
+.service_index li /* liste des je desire */
+{
+    color: #6f6f6f;
+    list-style : none;
+}
+
+.service_index li:hover
+{
+	color : #44997C;
+}
+/* ================================================ 
+   == Services
+   ================================================ */
+.pricing-table .title
+{
+	background-image:url(../images/navy_blue.png);
+	height: 90px;
+}
+.pricing-table .title p
+{
+    padding-top: 17px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.pricing-table .price p
+{
+    font-size: 0.6em;
+    color: #6f6f6f;
+}
+
+.pricing-table .bullet-item p
+{
+	color : #44997C;
+}
+
+.pricing-table .cta-button
+{
+	background-color: #f6f6f6;
+
+}
+
+.cta-button .button
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* ================================================ 
+   == Agence
+   ================================================ */
+.comment p
+{
+	min-height: 185px;/* trop rigide */
+	padding-top: 23px;
+
+}
+
+.flex-video
+{
+    margin-top: 15px;
+}
+/* ================================================ 
+   == Contact
+   ================================================ */
+.button-group li input
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* ================================================ 
+   == Footer
+   ================================================ */
+footer a
+{
+    color: #6f6f6f;
+    font-weight: 400;
+}
+
+footer a:hover
+{
+    /*text-decoration: underline;*/
+    color: #44997C;
+}
+
+
+footer 
+{
+	background-image:url(../images/footer.png);
+	background-repeat:repeat-x;
+	height:441px;
+	margin-top:100px;
+	padding-top:120px;
+	color:#fff;
+	padding-left:30px;
+	position: relative;
+	z-index: 10;
+}
+
+footer:before 
+{
+	clear:both;
+}
+
+footer ul li 
+{
+    list-style : none;
+    text-align: left;
+}
+
+footer a
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* ================================================ 
+   == Perso
+   ================================================ */
+.green 
+{
+	color : #44997C;
+}
+
+.button
+{
+	background-image:url(../images/navy_blue.png);
+	border-color: #44997C;
+	    font-size: 1.2em;
+    color: #6f6f6f;
+}
+
+.button:hover
+{
+	color: #44997C;
+}

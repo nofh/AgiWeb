@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- css -->
+	<link rel='stylesheet' type='text/css' href='{{ pcurl( root ~ config.css.normalize) }}'>
+	<link rel='stylesheet' type='text/css' href='{{ pcurl( root ~ config.css.zurb ) }}'>
+	<link rel='stylesheet' type='text/css' href='{{ pcurl( root ~ config.css.app ) }}'>
+	
+	<!-- icon -->
+	<link rel="icon" href="{{ pcurl( root ~ 'favicon.ico' ) }}" />
+
+	<!-- font -->
+	<script src="http://use.edgefonts.net/league-gothic.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+
+	<!-- titre -->
+        <title>{{ site.title }}</title>
+    </head>
+    <body>
+	<!-- HEADER -->
+	{% include 'header.html' %}
+
+	<!-- CONTENT -->
+	{% block content %} {{ content|raw }} {% endblock %}
+
+	<!-- FOOTER -->
+	{% include 'footer.html' %}
+    </body>
+</html>

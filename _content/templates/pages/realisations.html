@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- realisations web -->
+<div class='row'>
+ <h2 class='green'>{{ 'Réalisations web'|upper }}</h2>
+ <hr>
+</div>
+<!-- examples web -->
+{% for post in blog.posts.with_tag('realisationsweb') %}
+	<div class='row'>
+		<div class='panel'>
+			<ul class='small-block-grid-2 large-block-grid-3 clearing-thumbs' data-clearing>
+				<li>{{ post.img1|raw }}</li>
+				<li>{{ post.img2|raw }}</li>
+				<li>{{ post.img3|raw }}</li>
+			</ul>
+            		<h3>{{ post.title|raw }}</h3>
+			{{ post.content|raw }}
+		</div>
+	</div>
+{% endfor %}
+<!-- realisations gestion -->
+<div class='row'>
+ <h2 class='green'>{{ 'Réalisations Logicielles De Gestions'|raw }}</h2>
+ <hr>
+</div>
+<!-- examples gestion -->
+{% for post in blog.posts.with_tag('realisationsgestion') %}
+	<div class='row'>
+		<div class='panel'>
+			<ul class='small-block-grid-2 large-block-grid-3 clearing-thumbs' data-clearing>
+				<li>{{ post.img1|raw }}</li>
+				<li>{{ post.img2|raw }}</li>
+				<li>{{ post.img3|raw }}</li>
+			</ul>
+            		<h3>{{ post.title|raw }}</h3>
+			{{ post.content|raw }}
+		</div>
+	</div>
+{% endfor %}
+
+{% endblock %}

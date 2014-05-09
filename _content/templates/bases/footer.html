@@ -1,0 +1,39 @@
+<footer>
+<div class='row'>
+	<div class='small-6 columns'>
+		<ul>
+			<li><a href='{{ pcurl( root ~ 'agence' ) }}'><strong>Devis Gratuit, Sans Engagments.</strong></a></li>
+			<li><a href='{{ pcurl( root ~ 'agence' ) }}'><strong>Des Questions ? Réponse sous 48h.</strong></a></li>
+		</ul>
+	</div>
+	<div class='small-3 columns'>			
+		<h2 class='green'> SiteMap </h2>
+		<ul>
+            <li><a href="{{ pcurl( root ) }}">Accueil</a></li>
+  		    <li><a href="{{ pcurl( root ~ 'services' ) }}">Services</a></li>
+            <li><a href="{{ pcurl( root ~ 'realisations' ) }}">Réalisations</a></li>
+            <li><a href="{{ pcurl( root ~ 'agence' ) }}">L'Agence</a></li>
+            <li><a href="{{ pcurl( root ~ 'contact' ) }}">Contact</a></li>
+		<ul>
+	</div>
+</div>
+<div class='row'>
+	<div class='small-6 columns small-centered'>
+		<h7> Copyrigth: Tout droits réservés <a href=''>AgiWeb.be</h7></p>
+	</div>
+</div>
+</footer>
+
+<!-- PieCrust Debug -->
+{{ piecrust.debug_info|raw }}
+
+<!-- JS -->
+<script src='{{ pcurl( root ~ config.js.modernizr ) }}'></script>
+<script src='{{ pcurl( root ~ config.js.fastclick ) }}'></script>
+<script src='{{ pcurl( root ~ config.js.jquery ) }}'></script>
+<script src='{{ pcurl( root ~ config.js.placeholder ) }}'></script>
+<script src='{{ pcurl( root ~ config.js.jquerycookie ) }}'></script>
+<script src='{{ pcurl( root ~ config.js.app ) }}'></script>
+<script src='{{ pcurl( root ~ config.js.menu ) }}'></script>
+<script src='{{ pcurl( root ~ config.js.zurb ) }}'></script>
+<script> $(document).foundation();</script>

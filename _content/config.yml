@@ -1,0 +1,44 @@
+site:
+    title: 'AgiWeb'
+    description: 'La création web facile et pas chère!'
+    author: dendev
+    pretty_urls: true
+    templates_dirs:
+        - _content/templates/bases
+        - _content/templates/pages
+
+variants:
+    server:
+        form_contact: '../../assets/php/contact.php'
+        root: '/'
+    baker:
+        form_contact: 'assets/php/contact.php'
+        root: '/~dendev/agiweb/_counter/'
+
+smartypants:
+    enable: true
+    use_smartypants_typographer: true
+
+config:
+    logo: '<img src="favicon.ico" alt="AgiWeb Logo" >'
+    css: 
+        normalize: 'assets/vendor/foundation/css/normalize.css'
+        zurb: 'assets/vendor/foundation/css/foundation.css'
+        app: 'assets/css/style.css'
+    js:
+        modernizr: 'assets/vendor/foundation/js/vendor/modernizr.js'
+        placeholder: 'assets/vendor/foundation/js/vendor/placeholder.js'
+        fastclick: 'assets/vendor/foundation/js/vendor/fastclick.js'
+        jquery: 'assets/vendor/foundation/js/vendor/jquery.js'
+        jquerycookie: 'assets/vendor/foundation/js/vendor/jquery.cookie.js'
+        app: 'assets/js/app.js'
+        menu: 'assets/js/menu_actif.js'
+        zurb: 'assets/vendor/foundation/js/foundation.min.js'
+    images:
+        web: 'assets/images/web.png'
+        gestion: 'assets/images/gestion.png'
+        hebergement: 'assets/images/hebergement.png'
+        realisations: 'assets/images/realisations/'
+    textes:
+        slogan: 'Nous sommes spécialisés dans les <mark class="green">services Web</mark> et la <mark class="green">création de logiciels</mark> à destination des particuliers, indépendants, Tpe et Pme.'
+        devise: '<mark class="green"><strong>Agiweb</strong></mark> est votre <strong>partenaire</strong> web pour des <strong>solutions</strong> <mark class="green">Simples, Agiles et Peu Coûteuses</mark>.'

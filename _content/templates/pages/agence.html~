@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class='row'>
+	<!-- video presentation -->
+	<div class='medium-12 large-6 columns hide-for-small-only'>
+		<div class="flex-video">
+			<iframe width="320" height="200" src="//www.youtube.com/embed/68Vj8tDfF10?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!-- pourquoi et pour qui -->
+	<div class='large-6 columns'>
+		<div class='row'>
+				<h2 class='green'>Pourquoi</h2>
+				<hr>
+				{{ pourquoi|raw }}
+		</div>
+		<div class='row'>
+				<h2 class='green'>Pour qui</h2>
+				<hr>
+				{{ pourqui|raw }}
+		</div>
+	</div>
+</div>
+		
+<!-- comment -->
+<div class='row'>
+	<h2 class='green'>Comment</h2>
+	<hr>
+	<ul class='medium-block-grid-2 large-block-grid-2'>
+		<li class='comment'>
+			<div class='panel'>
+			<img src='{{ pcurl( root ~ assets.idee ) }}' alt='l'idee du projet'>
+			{{ idee|raw }}
+			</div>
+		</li>	
+		<li class='comment'>
+			<div class='panel'>
+			<img src='{{ pcurl( root ~ assets.document ) }}' alt='l'idee du projet'>
+			{{ documents|raw }}
+			</div>
+		</li>
+		<li class='comment'>
+			<div class='panel'>
+			<img src='{{ pcurl( root ~ assets.conception ) }}' alt='l'idee du projet'>
+			{{ conception|raw }}
+			</div>
+		</li>
+		<li class='comment'>
+			<div class='panel'>
+			<img src='{{ pcurl( root ~ assets.test ) }}' alt='l'idee du projet'>
+			{{ test|raw }}
+			</div>
+		</li>
+		<li class='comment'>
+			<div class='panel'>
+			<img src='{{ pcurl( root ~ assets.vente ) }}' alt='l'idee du projet'>
+			{{ vente|raw }}
+			</div>
+		</li>		
+	</ul>
+</div>
+{% endblock %}

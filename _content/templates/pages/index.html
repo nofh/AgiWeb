@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- services -->
+<div class='row'>
+ <h2 class='green'>Découvrez nos Services</h2>
+ <hr>
+</div>
+
+ <!-- creation web -->
+<div class='row'>
+	<ul class='small-block-grid-2 large-block-grid-3'>
+
+		<li class='service_index'>
+ 			<a href="{{ pcurl( root ~ 'services' ) }}">{{ web|raw }}</a>
+		</li>
+		<li class='service_index'>
+ 			<!-- gestion -->
+ 			<a href="{{ pcurl( root ~ 'services' ) }}">{{ gestion|raw }}</a>
+		</li>
+		<li class='service_index'>
+			 <!-- hebergement -->
+			<a href="{{ pcurl( root ~ 'services' ) }}">{{ hebergement|raw }}</a>
+		</li>
+	</a>
+	</ul>
+</div>
+
+<!-- devise -->
+<div class='row'>
+ <blockquote class='devise'>
+ 	{{ config.textes.devise|raw}}
+ <blockquote class=''>
+</div>
+{% endblock %}
+
+
+
+

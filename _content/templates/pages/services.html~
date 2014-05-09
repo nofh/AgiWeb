@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- services web -->
+<div class='row'>
+ <h2 class='green'>{{ 'Création web'|raw }}</h2>
+
+</div>
+<div class='row'>
+	<div class='panel'>
+         	<div class='small-3 columns'>
+			{{ imgweb|raw }}
+		</div>
+		{{ descweb|raw }}
+	</div>
+</div>
+<!-- prix web -->
+<div class='row'>
+	<ul class='small-block-grid-2 large-block-grid-3'>
+		{% for post in blog.posts.with_tag('servicesweb') %}
+			<li>
+				<ul class='pricing-table'>
+					<li class='title'>{{ post.titre|raw }}</li>
+					<li class='price'>{{ post.accroche|raw }}</li>
+					<li class='bullet-item'>{{ post.fct1|raw }}</li>
+					<li class='bullet-item'>{{ post.fct2|raw }}</li>
+					<li class='bullet-item'>{{ post.fct3|raw }}</li>
+					<li class='cta-button'><a class='button' href='contact'>Devis</a></li>
+
+				</ul>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+<!-- services gestion -->
+<div class='row'>
+ <h2 class='green'>{{ 'Logiciels De Gestion'|raw }}</h2>
+ <hr>
+</div>
+<div class='row'>
+	<div class='panel'>
+         	<div class='small-3 columns'>
+			{{ imggestion|raw }}
+		</div>
+		{{ descgestion|raw }}
+	</div>
+</div>
+<!-- prix gestion -->
+<div class='row'>
+	<ul class='small-block-grid-2 large-block-grid-3'>
+		{% for post in blog.posts.with_tag('servicesgestion') %}
+			<li>
+				<ul class='pricing-table'>
+					<li class='title'>{{ post.titre|raw }}</li>
+					<li class='price'>{{ post.accroche|raw }}</li>
+					<li class='description'>{{ post.description|raw }}</li>
+					<li class='bullet-item'>{{ post.fct1|raw }}</li>
+					<li class='bullet-item'>{{ post.fct2|raw }}</li>
+					<li class='bullet-item'>{{ post.fct3|raw }}</li>
+					<li class='cta-button'><a class='button' href='contact'>Devis</a></li>
+
+				</ul>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+
+<!-- services hebergement -->
+<div class='row'>
+ <h2 class='green'>{{ 'Hébergement'|raw }}</h2>
+ <hr>
+</div>
+<div class='row'>
+	<div class='panel'>
+         	<div class='small-3 columns'>
+			{{ imghebergement|raw }}
+		</div>
+		{{ deschebergement|raw }}
+	</div>
+</div>
+<!-- prix hebergement -->
+<div class='row'>
+	<ul class='small-block-grid-2 large-block-grid-3'>
+		{% for post in blog.posts.with_tag('serviceshebergement') %}
+			<li>
+				<ul class='pricing-table'>
+					<li class='title'>{{ post.titre|raw }}</li>
+					<li class='price'>{{ post.accroche|raw }}</li>
+					<li class='description'>{{ post.description|raw }}</li>
+					<li class='bullet-item'>{{ post.fct1|raw }}</li>
+					<li class='bullet-item'>{{ post.fct2|raw }}</li>
+					<li class='bullet-item'>{{ post.fct3|raw }}</li>
+					<li class='cta-button'><a class='button' href='contact'>Devis</a></li>
+
+				</ul>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}

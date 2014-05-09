@@ -1,0 +1,6 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "5.1.*@dev",
+        "yiisoft/jquery": "dev-master"
+    }
+}

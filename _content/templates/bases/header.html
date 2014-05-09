@@ -1,0 +1,30 @@
+<div class="contain-to-grid fixed">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href='{{ pcurl( root ) }}' class=''><img src="{{ pcurl( root ~ 'favicon.ico' ) }}" alt="AgiWeb Logo" >{{ site.title }}</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="{{ pcurl( root ~ 'index' ) }}">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="">
+      <li class=""><a href="{{ pcurl( root ~ 'services' ) }}">Services</a></li>
+      <li class=""><a href="{{ pcurl( root ~ 'realisations' ) }}">Réalisations</a></li>
+      <li class=""><a href="{{ pcurl( root ~ 'agence' ) }}">L'Agence</a></li>
+      <li class=""><a href="{{ pcurl( root ~ 'contact' ) }}">Contact</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
+<!-- slogan -->
+	<header>
+<div class='row'>
+	<div class='small-12 large-10 columns large-centered'>
+              <blockquote id='slogan'>
+		<img src="{{ pcurl( root ~ 'assets/images/quote.png' ) }}" alt='debut quote' class='ouvertureQuote'>{{ config.textes.slogan|raw }}<img src="{{ pcurl( root ~ 'assets/images/quote2.png' ) }}" alt='fin quote' class='fermetureQuote'>
+	      </blockquote>
+	</div>
+</div> 
+	</header>
+	

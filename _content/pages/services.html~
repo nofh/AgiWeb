@@ -1,0 +1,26 @@
+---
+title: Services
+date: 2014-04-19 17:55
+layout: services
+posts_filters:
+    has_tags: test
+---
+
+---imgweb---
+![création web]( {{ pcurl( root ~ config.images.web ) }} )
+
+---descweb---
+Nous proposons plusieurs offres de créations de sites web afin de répondre au mieux aux besoins de chacun. Nous réalisons tout ce qui est site portail, marketing, portefolio, e-commerce, e-services sur mesure et selon les standards actuels du développement. Vous nous contactez et nous chercherons ensemble la solution web qui convient le mieux à vos attentes
+
+---imggestion---
+![création de gestion]( {{ config.images.gestion }} )
+
+---descgestion---
+Les logiciels de gestion sont de plus en plus utilisés de nos jours pour simplifier, automatiser et conserver les informations capitales de votre activité. Génération de factures, gestion des informations clients, informatisations des dossiers, etc, n'hésitez pas à nous parler de vos besoins en la matière.
+
+---imghebergement---
+![hébergement]( {{ config.images.hebergement }} )
+
+---deschebergement---
+Nous pouvons prendre en charge l'hébergement de vos sites web, créer ou non chez nous, ainsi que de vos applications de gestion accessibles en ligne. Vos sites et applications seront disponibles 7 jours sur 7 sans aucun effort de votre part et avec la garantie de la meilleure qualité.
+
